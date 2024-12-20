@@ -1,0 +1,166 @@
+  *{
+	  margin: 0;
+	  padding: 0;
+
+  }
+
+  html{
+  	font-size: 17px;
+  } 
+
+  body { 
+	background: hsl(110, 40%, 40%);
+	  font-family: Geneva, Arial, Helvetica, sans-serif;
+	  line-height: 1.2;
+
+/*	  letter-spacing: 0.01em;*/
+}  
+
+ h1 {
+	color: darkgreen;
+	 text-align: center;
+	 font-size: 1.8rem;
+	 
+	/*text-shadow: 0px 1px 0px black;*/
+ }
+
+ main {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 940px;
+	background: white;
+	padding: 20px;
+	border-right: 1px solid darkgreen;
+	border-bottom: 1px solid darkgreen;
+
+ }
+
+ p {
+	text-indent: 20px; /* Отступ первой строки в пикселах */
+	font-size: 1.2rem;
+/*	 font-size: 1.5vw;*/
+   }
+
+
+ .italicParagraph{
+	 font-style: italic;
+ }
+
+ .spoilerText {
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 5px;
+    /*display :none;*/
+	font-size: 1.2rem;
+/*	 font-size: 1.5vw;*/
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 15px;
+    width: 98%;
+/*    border: 1px solid darkgreen;*/
+    background: hsl(90, 100%, 90%);
+/*	 background: whitesmoke;*/
+/*	 background: hsl(148, 58%, 28%)*/
+	
+/*
+	 	border-right: 1px solid darkgreen;
+	border-bottom: 1px solid darkgreen;
+*/
+    
+}
+/* кликабельный текст */
+.spoilerWord {
+	cursor: pointer;
+	border-bottom:1px dashed;
+/*	transition: color .1s;*/
+	color: hsl(120, 100%, 15%);
+/*
+	text-shadow: 0px 1px 0px darkgreen;
+	color: darkgreen;
+*/
+	
+}
+.spoilerWord:hover{
+/*    color: darkseagreen;*/
+	color: black;
+/*	text-shadow: 0px 1px 0px darkgreen;*/
+}
+
+
+
+
+.spoilerTitle {
+	width: auto;
+	border-bottom: 1px dashed;
+	font-size: 1.35rem;
+/*	font-size: 1.7vw;*/
+	font-weight: bold;
+	/*text-shadow: 0px 1px 0px black;*/
+}
+
+.resp-videocontainer {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;  /*This is where the magic is. In CSS, the padding-top property can receive a percentage, this is what keeps our iframe to the right ratio. By using percentage, it will calculate the padding to use based on the width of the element. In our example, we want to keep the ratio of 56.26% (height 9 ÷ width 16) because this is the default ratio for YouTube videos. However, other ratios can be used as well.*/
+}
+
+.resp-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.closeSpoiler {
+	cursor: pointer;
+	/*border-bottom:1px dashed;*/
+	/*background: hsl(90, 100%, 90%);*/
+	color: hsl(120, 100%, 15%);
+	/*display: none;*/
+	font-size: 1.5rem;
+	margin: 0;
+	padding: 6px 10px 10px 10px;
+	width: auto;
+}
+
+
+details summary {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+/*	border-bottom:1px dashed;*/
+  cursor: pointer;  /* изменение курсора при наведении */
+  color: darkgreen;
+	 /*transition: color .1s*/
+}
+
+details summary:hover {
+	color: black;
+/*	border-bottom:1px solid;*/
+	
+}
+
+details[open] summary {
+	color: black;
+/*	border-bottom:1px solid;*/
+	
+}
+
+/*.spoilerContent {
+	width: 100%;
+	max-height: 100%;
+}*/
+
+/*.videoFrame {
+	width= 560px;
+	height= 315px;
+
+}*/

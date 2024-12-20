@@ -1,0 +1,66 @@
+  body { 
+	background: whitesmoke;
+}  
+
+ h1 {
+	color: darkgreen;
+	text-align: center;
+ }
+
+ main {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 940px;
+	background: white;
+	padding: 20px;
+	border-right: 1px solid darkgreen;
+	border-bottom: 1px solid darkgreen;
+
+ }
+
+ p {
+	text-indent: 20px;
+	font-size: 1.25rem;
+   }
+
+ .startParagraph {
+	text-indent: 0px;
+	font-size: 1.25rem;
+ }
+
+ .italicParagraph{
+	 font-style: italic;
+ }
+
+
+span {
+	font-size: 1.25rem;
+}
+
+.spoilerTitle {
+	width: auto;
+	border-bottom: 1px dashed;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+
+details summary {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  color: darkgreen;
+}
+
+details summary:hover {
+	color: black;
+	
+}
+
+details[open] summary {
+	color: black;
+}
